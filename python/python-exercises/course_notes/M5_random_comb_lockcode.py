@@ -21,7 +21,7 @@ print("3位密码:", code_3digit)
 print("4位密码:", code_4digit)
 
  #   方法2 if 循环版  #
- import random
+import random
 
 # ----------------- 1. 生成 3 位密码 (每位 0-9) -----------------
 code_3digit = ""
