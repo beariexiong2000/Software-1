@@ -1,0 +1,68 @@
+# 两种方法-对输入的数字自动生成最大最小数字
+
+#1 Ask the user for input for the first time
+user_input = input("Enter a number (or press Enter to quit): ")
+
+# Check if the user entered something (if it is not an empty string)
+if user_input != "":
+    # Set the first number as both the smallest and largest so far
+    smallest = float(user_input)
+    largest = float(user_input)
+
+    # Keep running the loop as long as user_input is not empty
+    while user_input != "":
+        # Convert the input text into a decimal number
+        number = float(user_input)
+
+        # If this number is smaller than our current smallest, update smallest
+        if number < smallest:
+            smallest = number
+
+        # If this number is larger than our current largest, update largest
+        if number > largest:
+            largest = number
+
+        # Ask the user for the next input before restarting the loop
+        user_input = input("Enter a number (or press Enter to quit): ")
+
+    # Output the final results after the loop ends
+    print("Smallest number:", smallest)
+    print("Largest number:", largest)
+
+
+#2 number list numbers.append(number)
+
+# Create an empty list to store all the numbers entered by the user.
+numbers = []
+
+
+# Ask the user to enter a number.
+# The user can press Enter without typing anything to quit.
+user_input = input("Enter a number (or press Enter to quit): ")
+
+
+# Keep running the loop while the user input is NOT an empty string.
+# "" means the user pressed Enter without typing anything.
+while user_input != "":
+
+    # Convert the user's input from text (string) into a decimal number.
+    number = float(user_input)
+
+
+    # Add the number to the numbers list.
+    numbers.append(number)
+
+
+    # Ask the user to enter another number.
+    # This happens every time the loop repeats.
+    user_input = input("Enter a number (or press Enter to quit): ")
+
+
+# The user entered an empty string, so the while loop has ended.
+
+# min(numbers) finds the smallest number in the list.
+print(f"Smallest number: {min(numbers)}")
+
+
+# max(numbers) finds the largest number in the list.
+print(f"Largest number: {max(numbers)}")

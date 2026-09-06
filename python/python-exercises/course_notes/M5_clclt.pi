@@ -1,0 +1,28 @@
+# pi_approximation = 4 * n / N
+# x**2 + y**2 = d**2
+import random
+
+# 1. 获取用户输入的点数总数 N
+N = int(input("How many random points to generate? "))
+
+# 2. 初始化计数器
+n = 0  # 记录落在圆内的点数
+i = 0  # 记录当前已经生成的总点数
+
+# 3. 使用 while 循环生成 N 个点
+while i < N:
+    # 随机生成坐标 x 和 y (-1 到 1 之间)
+    x = random.uniform(-1, 1)
+    y = random.uniform(-1, 1)
+    
+    # 检查点是否在圆内
+    if x**2 + y**2 < 1:
+        n += 1  # 圆内计数加 1
+        
+    i += 1  # 循环计数加 1
+
+# 4. 计算 pi 的近似值
+pi_approximation = 4 * n / N
+
+# 5. 输出结果
+print("Approximation of pi:", pi_approximation)
