@@ -31,9 +31,29 @@ interact with user; label the variable; basic grammar and calculation
 ┣ 📜exercise5.py what are their function? \n {} :.2f
 ┗ 📜exercise6.py A = ""; import random; len(); random.randit(0,9);
 
-📦mod04
+📦mod04 if-elif
 if:-elif:else: ; round() / f":.2f"; f"{} is xxx"; % 整除
 ┣ 📜exercise1.py
 ┣ 📜exercise2.py == != <= >=
 ┣ 📜exercise3.py a % b != 0 or == 0
 ┗ 📜exercise4.py f"{} is xxx"
+
+📦mod05 while
+ ┣ 📜exrcs1.py  %n（整除） while = repeat action 
+ ┣ 📜exrcs2.py  compare numbers
+ ┣ 📜exrcs3.py  
+ ┣ 📜exrcs4.py  random.randint( while - if - if)
+ ┣ 📜exrcs5.py  
+ ┗ 📜exrcs6.py
+
+ 📦mod06 for  
+ ┣ 📜exrcs1.py  for variable in range(x,y), sum(variable_box)
+ ┣ 📜exrcs2.py
+ ┣ 📜exrcs3.py
+ ┣ 📜exrcs4.py
+
+ 📦mod07 def-return
+ ┣ 📜exrcs1.py
+ ┣ 📜exrcs2.py
+ ┣ 📜exrcs3.py
+ ┣ 📜exrcs4.py
