@@ -1,15 +1,15 @@
 # 初级版本不用 for
 import random
 
+number = int(input("How many dice to roll: "))
+
+finished_number = 0
 dice_list = []
-dice_num = int(input("How many dice to roll:"))
 
-counter = 0
-
-while counter < dice_num:
-    counter += 1
-    dice_roll = random.randint(1, 6)
-    dice_list.append(dice_roll)
+while finished_number < number:
+    dice = random.randint(1, 6)
+    dice_list.append(dice)
+    finished_number += 1
 
 sum_dice = sum(dice_list)
 
